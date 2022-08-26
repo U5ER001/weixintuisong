@@ -79,7 +79,6 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir):
     year = localtime().tm_year
     month = localtime().tm_mon
     day = localtime().tm_mday
-    week = week_list[today.isoweekday() % 7]
     data = {
         "touser": to_user,
         "template_id": config["template_id"],
