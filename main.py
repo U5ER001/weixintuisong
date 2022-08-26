@@ -1,7 +1,6 @@
 import random
 from time import localtime
 from requests import get, post
-from datetime import datetime, date
 from zhdate import ZhDate
 import sys
 import os
@@ -80,7 +79,6 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir):
     year = localtime().tm_year
     month = localtime().tm_mon
     day = localtime().tm_mday
-    today = datetime.date(datetime(year=year, month=month, day=day))
     week = week_list[today.isoweekday() % 7]
     data = {
         "touser": to_user,
