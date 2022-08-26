@@ -101,7 +101,6 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir):
                 "color": get_color()
             },
         }
-    }
     headers = {
         'Content-Type': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
